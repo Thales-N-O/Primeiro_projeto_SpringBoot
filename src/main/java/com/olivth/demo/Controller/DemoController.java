@@ -5,9 +5,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@RequestMapping
+
 public class DemoController {
-    @RequestMapping
-    @GetMapping
+    @GetMapping("/kratos")
         public String teste1(){return "Zeus, ur son has returned??";}
 
 }
